@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>pyGIS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>741</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>181</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calculadora Raster</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>40</y>
+        <width>361</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="button_2">
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="button_3">
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="button_9">
+         <property name="text">
+          <string>9</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="button_4">
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="button_7">
+         <property name="text">
+          <string>7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="button_5">
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="button_6">
+         <property name="text">
+          <string>6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="button_0">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="button_1">
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="button_punto">
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="button_8">
+         <property name="text">
+          <string>8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="button_mayor">
+         <property name="text">
+          <string>&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="button_igual">
+         <property name="text">
+          <string>=</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="button_menor">
+         <property name="text">
+          <string>&lt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="button_borrar">
+         <property name="text">
+          <string>Borrar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>66</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Teclado</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>210</y>
+        <width>66</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Funciones</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_calcular">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>430</y>
+        <width>71</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calcular</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_limpiar">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>430</y>
+        <width>81</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limpiar</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>321</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="title">
+       <string>Expresion</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>321</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="cursorMoveStyle">
+        <enum>Qt::LogicalMoveStyle</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>200</y>
+        <width>351</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Capas rasters</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>331</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Capa A</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_B"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="button_capa_b">
+          <property name="text">
+           <string>B</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_A"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="button_capa_a">
+          <property name="text">
+           <string>A</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Capa B</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="button_capa_c">
+          <property name="text">
+           <string>C</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Capa C</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_C"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>211</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>RutaDelArchivo/nombreArchivo</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>240</y>
+        <width>361</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="button_resta">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="button_pi">
+         <property name="text">
+          <string>pi</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="button_multi">
+         <property name="text">
+          <string>x</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="button_potencia">
+         <property name="text">
+          <string>^</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="button_division">
+         <property name="text">
+          <string>/</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="button_e">
+         <property name="text">
+          <string>e</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="button_log10">
+         <property name="text">
+          <string>log()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="button_cos">
+         <property name="text">
+          <string>cos()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="button_pare_dere">
+         <property name="text">
+          <string>(</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="button_pare_izqui">
+         <property name="text">
+          <string>)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="button_sin">
+         <property name="text">
+          <string>sin()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="button_suma">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="button_tan">
+         <property name="text">
+          <string>Tan()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="button_OR">
+         <property name="text">
+          <string>OR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="button_ln_2">
+         <property name="text">
+          <string>ln()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="button_AND">
+         <property name="text">
+          <string>AND</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="button_max">
+         <property name="text">
+          <string>Max</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="button_min">
+         <property name="text">
+          <string>Min</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="button_sqrt">
+         <property name="text">
+          <string>sqrt()</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="button_sqrt3">
+         <property name="text">
+          <string>sqrt3()</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Salida</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_salida"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="button_limpiar_todo">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>430</y>
+        <width>101</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limpiar todo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>350</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RutaDelArchivo/nombreArchivo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>430</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Progreso: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="estado">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>430</y>
+        <width>301</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>391</width>
+        <height>341</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>755</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivos">
+    <property name="title">
+     <string>Archivos</string>
+    </property>
+    <addaction name="actionAbrir_Imagen"/>
+    <addaction name="actionGuardar_Imagen"/>
+    <addaction name="Button_Salir"/>
+   </widget>
+   <widget class="QMenu" name="menuGeoprocesos">
+    <property name="title">
+     <string>Geoprocesos</string>
+    </property>
+    <widget class="QMenu" name="menuIndices_de_vegetacion">
+     <property name="title">
+      <string>Indices de vegetacion</string>
+     </property>
+     <addaction name="SAVI1_2"/>
+     <addaction name="NDVI1"/>
+     <addaction name="button_cociente_simple"/>
+     <addaction name="button_NDVI_tm"/>
+     <addaction name="button_TTVI_2"/>
+     <addaction name="button_CTVI"/>
+     <addaction name="button_RVI"/>
+     <addaction name="button_TVI"/>
+     <addaction name="button_ARVI"/>
+     <addaction name="button_GEMI"/>
+     <addaction name="button_EVI"/>
+     <addaction name="button_NDII"/>
+    </widget>
+    <widget class="QMenu" name="menuParametros_climaticos">
+     <property name="title">
+      <string>Parametros climaticos</string>
+     </property>
+     <addaction name="button_albedo"/>
+     <addaction name="separator"/>
+     <addaction name="temp_b_b10_TOA"/>
+     <addaction name="separator"/>
+     <addaction name="temp_b_b11_TOA"/>
+     <addaction name="separator"/>
+     <addaction name="LSE_sebal"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuParametros_edafo_pedologicos">
+     <property name="title">
+      <string>Parametros edafo-pedologicos</string>
+     </property>
+     <addaction name="hum_soil"/>
+     <addaction name="button_NDWI"/>
+     <addaction name="button_NDSI"/>
+    </widget>
+    <widget class="QMenu" name="menuParametros_Ecofisiologicos">
+     <property name="title">
+      <string>Parametros Ecofisiologicos</string>
+     </property>
+     <widget class="QMenu" name="menuKc">
+      <property name="title">
+       <string>Coeficiente de cultivo (ETo)</string>
+      </property>
+      <addaction name="button_kc_Maiz"/>
+     </widget>
+     <addaction name="button_IAF_LAI"/>
+     <addaction name="button_F_PAR"/>
+     <addaction name="menuKc"/>
+    </widget>
+    <addaction name="menuIndices_de_vegetacion"/>
+    <addaction name="separator"/>
+    <addaction name="menuParametros_climaticos"/>
+    <addaction name="separator"/>
+    <addaction name="menuParametros_edafo_pedologicos"/>
+    <addaction name="separator"/>
+    <addaction name="menuParametros_Ecofisiologicos"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="button_Ayuda"/>
+    <addaction name="button_Acerca"/>
+    <addaction name="actionOpciones"/>
+   </widget>
+   <addaction name="menuArchivos"/>
+   <addaction name="menuGeoprocesos"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <action name="actionAbrir_Imagen">
+   <property name="text">
+    <string>Abrir Imagen</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Imagen">
+   <property name="text">
+    <string>Guardar Imagen</string>
+   </property>
+  </action>
+  <action name="Button_Salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="button_Ayuda">
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+  </action>
+  <action name="button_Acerca">
+   <property name="text">
+    <string>Acerca...</string>
+   </property>
+  </action>
+  <action name="actionOpciones">
+   <property name="text">
+    <string>Opciones</string>
+   </property>
+  </action>
+  <action name="SAVI1_2">
+   <property name="text">
+    <string>Indice de vegetacion ajustado al suelo - SAVI</string>
+   </property>
+  </action>
+  <action name="NDVI1">
+   <property name="text">
+    <string>Indice de vegetacion normalizado - NDVI</string>
+   </property>
+  </action>
+  <action name="button_albedo">
+   <property name="text">
+    <string>Albedo</string>
+   </property>
+  </action>
+  <action name="temp_b_b10_TOA">
+   <property name="text">
+    <string>Temperatura de brillo TOA banda 10</string>
+   </property>
+  </action>
+  <action name="hum_soil">
+   <property name="text">
+    <string>Humedad del suelo</string>
+   </property>
+  </action>
+  <action name="button_NDWI">
+   <property name="text">
+    <string>Indice de humedad normalizado</string>
+   </property>
+  </action>
+  <action name="button_IAF_LAI">
+   <property name="text">
+    <string>Indice de area foliar - IAF/LAI</string>
+   </property>
+  </action>
+  <action name="button_F_PAR">
+   <property name="text">
+    <string>Fraccion de PAR</string>
+   </property>
+  </action>
+  <action name="button_cociente_simple">
+   <property name="text">
+    <string>Cociente simple</string>
+   </property>
+  </action>
+  <action name="button_NDVI_tm">
+   <property name="text">
+    <string>NDVI tm</string>
+   </property>
+  </action>
+  <action name="button_TTVI_2">
+   <property name="text">
+    <string>Indice de vegetacion transformado de Thian</string>
+   </property>
+  </action>
+  <action name="button_CTVI">
+   <property name="text">
+    <string>Indice de vegetacion transformado corregido - CTVI</string>
+   </property>
+  </action>
+  <action name="button_TTVI">
+   <property name="text">
+    <string>IVTT - TTVI</string>
+   </property>
+  </action>
+  <action name="button_RVI">
+   <property name="text">
+    <string>Indice de vegetacion de cociente - RVI</string>
+   </property>
+  </action>
+  <action name="button_kc_Maiz">
+   <property name="text">
+    <string>Maiz</string>
+   </property>
+  </action>
+  <action name="button_TVI">
+   <property name="text">
+    <string>Indice de vegetacion transformado - TVI</string>
+   </property>
+  </action>
+  <action name="temp_b_b11_TOA">
+   <property name="text">
+    <string>Temperatura de brillo TOA Banda 11</string>
+   </property>
+  </action>
+  <action name="LSE_sebal">
+   <property name="text">
+    <string>Emisividad superficial</string>
+   </property>
+  </action>
+  <action name="button_ARVI">
+   <property name="text">
+    <string>Indice de vegetacion atmosfericamente resistente - ARVI</string>
+   </property>
+  </action>
+  <action name="button_GEMI">
+   <property name="text">
+    <string>Indice global de monitoreo ambiental - GEMI</string>
+   </property>
+  </action>
+  <action name="button_EVI">
+   <property name="text">
+    <string>Indice de vegetacion mejorado - EVI</string>
+   </property>
+  </action>
+  <action name="button_NDII">
+   <property name="text">
+    <string>Indice de infrarrojo de diferencia normalizado - NDII</string>
+   </property>
+  </action>
+  <action name="actionIndice_de_nieve_normalizado_NDSI">
+   <property name="text">
+    <string>Indice de nieve normalizado - NDSI</string>
+   </property>
+  </action>
+  <action name="button_NDSI">
+   <property name="text">
+    <string>Indice de nieve normalizado</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
